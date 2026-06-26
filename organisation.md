@@ -14,8 +14,6 @@ permalink: /organisation/
 
 <section class="section committee-section">
   <h2>Organising Committee</h2>
-  <p class="lead">Confirmed committee information extracted from the AVSS 2027 proposal deck.</p>
-
   <h3>Honorary Chair</h3>
   <div class="committee-grid one-card">
     <article class="person-card">
@@ -60,6 +58,11 @@ permalink: /organisation/
       <img src="{{ '/commitee_photo/eduardo-antonio-barros-da-silva.png' | relative_url }}" alt="Eduardo Antonio Barros da Silva">
       <h4>Eduardo Antonio Barros da Silva</h4>
       <p>Universidade Federal do Rio de Janeiro, Brazil</p>
+    </article>
+    <article class="person-card">
+      <img src="{{ '/commitee_photo/liyue-shen.jpg' | relative_url }}" alt="Liyue Shen">
+      <h4>Liyue Shen</h4>
+      <p>University of Michigan, USA</p>
     </article>
   </div>
 
@@ -119,7 +122,7 @@ permalink: /organisation/
     <article class="person-card">
       <img src="{{ '/commitee_photo/pengyang-wang.png' | relative_url }}" alt="Pengyang Wang">
       <h4>Pengyang Wang</h4>
-      <p>University of Macau</p>
+      <p>University of Macau, Macau</p>
     </article>
   </div>
 
@@ -137,7 +140,7 @@ permalink: /organisation/
     <article class="person-card">
       <img src="{{ '/commitee_photo/shao-yuan-lo.png' | relative_url }}" alt="Shao-Yuan Lo">
       <h4>Shao-Yuan Lo</h4>
-      <p>National Taiwan University</p>
+      <p>National Taiwan University, Taiwan</p>
     </article>
     <article class="person-card">
       <img src="{{ '/commitee_photo/yifan-sun.png' | relative_url }}" alt="Yifan Sun">
@@ -155,20 +158,30 @@ permalink: /organisation/
     </article>
   </div>
 
-  <h3>Local Chair</h3>
-  <div class="committee-grid one-card">
+  <h3>Local Chairs</h3>
+  <div class="committee-grid">
     <article class="person-card">
       <img src="{{ '/commitee_photo/derek-wong.png' | relative_url }}" alt="Derek Wong">
       <h4>Derek Wong</h4>
       <p>University of Macau, Macau</p>
     </article>
+    <article class="person-card">
+      <img src="{{ '/commitee_photo/bob-zhang.jpg' | relative_url }}" alt="Bob Zhang">
+      <h4>Bob Zhang</h4>
+      <p>University of Macau, Macau</p>
+    </article>
   </div>
 
-  <h3>Registration Chair</h3>
-  <div class="committee-grid one-card">
+  <h3>Registration Chairs</h3>
+  <div class="committee-grid">
     <article class="person-card">
       <img src="{{ '/commitee_photo/dingqi-yang.png' | relative_url }}" alt="Dingqi Yang">
       <h4>Dingqi Yang</h4>
+      <p>University of Macau, Macau</p>
+    </article>
+    <article class="person-card">
+      <img src="{{ '/commitee_photo/hao-ju.jpg' | relative_url }}" alt="Hao Ju">
+      <h4>Hao Ju</h4>
       <p>University of Macau, Macau</p>
     </article>
   </div>
@@ -178,7 +191,7 @@ permalink: /organisation/
     <article class="person-card">
       <img src="{{ '/commitee_photo/guangtao-zhai.png' | relative_url }}" alt="Guangtao Zhai">
       <h4>Guangtao Zhai</h4>
-      <p>Shanghai Jiaotong University, China</p>
+      <p>Shanghai Jiao Tong University, China</p>
     </article>
     <article class="person-card">
       <img src="{{ '/commitee_photo/senem-velipasalar.png' | relative_url }}" alt="Senem Velipasalar">
@@ -189,6 +202,16 @@ permalink: /organisation/
       <img src="{{ '/commitee_photo/jefersson-alex-dos-santos.jpeg' | relative_url }}" alt="Jefersson Alex dos Santos">
       <h4>Jefersson Alex dos Santos</h4>
       <p>University of Sheffield, UK</p>
+    </article>
+    <article class="person-card">
+      <img src="{{ '/commitee_photo/jun-wei-hsieh.jpg' | relative_url }}" alt="Jun-wei Hsieh">
+      <h4>Jun-wei Hsieh</h4>
+      <p>National Yang Ming Chiao Tung University, Taiwan</p>
+    </article>
+    <article class="person-card">
+      <img src="{{ '/commitee_photo/Sachi-Nandan-Mohanty.jpg' | relative_url }}" alt="Sachi Mohanty">
+      <h4>Sachi Mohanty</h4>
+      <p>VIT-AP University, India</p>
     </article>
   </div>
 
