@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
+  <title id="title">AVSS 2027 Macau SAR logo</title>
+  <desc id="desc">A balanced AVSS 2027 conference logo with stylized Macau landmarks and conference details.</desc>
+  <defs>
+    <linearGradient id="water" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#0879bd"/>
+      <stop offset="0.58" stop-color="#1298cb"/>
+      <stop offset="1" stop-color="#0a66a8"/>
+    </linearGradient>
+    <style>
+      .blue { fill: #0878bd; }
+      .deep { fill: #075f9c; }
+      .light { fill: #4aa8d6; }
+      .white { fill: #fff; }
+      .stroke { fill: none; stroke: #0878bd; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+      .stroke-thin { fill: none; stroke: #0878bd; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 82px; font-weight: 800; letter-spacing: 0; fill: #0878bd; }
+      .date { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 800; letter-spacing: 0; fill: #075f9c; }
+      .place { font-family: Arial, Helvetica, sans-serif; font-size: 27px; font-weight: 800; letter-spacing: 0; fill: #075f9c; }
+      .mark { font-family: Arial, Helvetica, sans-serif; font-size: 32px; font-weight: 800; letter-spacing: 0; fill: #fff; }
+    </style>
+  </defs>
+
+  <g transform="translate(70 38)">
+    <path d="M0 152 C84 191 153 191 232 151 C301 117 366 122 423 151 C480 181 539 179 605 139 L605 194 L0 194 Z" fill="url(#water)"/>
+    <path d="M0 141 C81 174 153 174 231 135 C300 100 368 105 426 137 C484 169 541 165 605 124" class="stroke"/>
+    <path d="M38 160 C98 180 162 169 222 139 C294 103 363 111 420 143" class="stroke-thin" opacity=".42"/>
+
+    <g transform="translate(41 68)">
+      <path d="M0 91 L0 35 L44 0 L88 35 L88 91 Z" class="blue"/>
+      <circle cx="44" cy="29" r="9" class="white"/>
+      <path d="M19 42 L19 91 M35 42 L35 91 M53 42 L53 91 M69 42 L69 91" stroke="#fff" stroke-width="5"/>
+    </g>
+
+    <g transform="translate(150 24)">
+      <rect x="34" y="66" width="40" height="98" rx="4" class="deep"/>
+      <path d="M54 0 L72 66 L36 66 Z" class="blue"/>
+      <path d="M54 9 L54 162" stroke="#fff" stroke-width="4" opacity=".72"/>
+      <rect x="28" y="88" width="52" height="9" class="white" opacity=".9"/>
+      <rect x="26" y="111" width="56" height="9" class="white" opacity=".9"/>
+    </g>
+
+    <g transform="translate(281 83)">
+      <path d="M0 86 L0 30 L42 0 L82 30 L82 86 Z" class="blue"/>
+      <path d="M93 86 L93 26 L143 2 L193 26 L193 86 Z" class="light"/>
+      <rect x="24" y="45" width="40" height="7" class="white" opacity=".85"/>
+      <rect x="119" y="35" width="48" height="7" class="white" opacity=".85"/>
+      <rect x="119" y="57" width="48" height="7" class="white" opacity=".85"/>
+    </g>
+
+    <g transform="translate(488 95)">
+      <path d="M0 82 C45 19 102 19 147 82" class="stroke-thin"/>
+      <path d="M17 82 L17 53 M47 82 L47 34 M74 82 L74 22 M101 82 L101 34 M130 82 L130 53" class="stroke-thin"/>
+    </g>
+
+    <text x="311" y="148" class="mark">AVSS</text>
+  </g>
+
+  <g transform="translate(740 73)">
+    <text x="0" y="0" class="title">AVSS 2027</text>
+    <text x="4" y="48" class="date">July 15-17, 2027</text>
+    <text x="4" y="88" class="place">University of Macau | Macau SAR</text>
+  </g>
+</svg>

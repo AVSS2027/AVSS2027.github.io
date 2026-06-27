@@ -13,23 +13,22 @@
   </head>
   <body>
     <header class="site-header">
-      <nav class="nav-shell" aria-label="Primary navigation">
-        <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
-          <span class="brand-mark">AVSS</span>
-          <span class="brand-text">2027</span>
+      <div class="logo-masthead">
+        <a href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
+          <img src="{{ '/assets/images/avss2027-main-logo.svg' | relative_url }}" alt="AVSS 2027">
         </a>
+      </div>
+      <nav class="nav-shell" aria-label="Primary navigation">
         <div class="nav-links">
-          <a href="{{ '/' | relative_url }}">IEEE AVSS</a>
-          <a href="{{ '/#dates' | relative_url }}">Important Dates</a>
-          <a href="{{ '/organisation/' | relative_url }}">Committee</a>
           <div class="nav-group">
-            <a href="#" aria-disabled="true">Calls</a>
+            <a href="{{ '/#attending' | relative_url }}">Attending</a>
             <div class="nav-menu">
-              <a href="{{ '/#call-for-paper' | relative_url }}">Call for Papers</a>
-              <a href="#" aria-disabled="true">Call for Challenge</a>
-              <a href="#" aria-disabled="true">Call for Workshop</a>
-              <a href="#" aria-disabled="true">Call for Tutorial</a>
-              <a href="#" aria-disabled="true">Submission Instructions</a>
+              <a href="{{ '/#venue' | relative_url }}">Venue: University of Macau</a>
+              <a href="{{ '/#registration' | relative_url }}">Registration</a>
+              <a href="{{ '/#transportation' | relative_url }}">Transportation</a>
+              <a href="{{ '/#accommodation' | relative_url }}">Accommodation</a>
+              <a href="{{ '/#travel-grant' | relative_url }}">Travel Grant</a>
+              <a href="{{ '/visa-info/' | relative_url }}">Visa Info</a>
             </div>
           </div>
           <div class="nav-group">
@@ -42,21 +41,40 @@
             </div>
           </div>
           <div class="nav-group">
-            <a href="#" aria-disabled="true">Award</a>
+            <a href="{{ '/#tracks' | relative_url }}">Tracks</a>
             <div class="nav-menu">
-              <a href="#" aria-disabled="true">Best Paper</a>
-              <a href="#" aria-disabled="true">Thesis Paper Awards</a>
+              <a href="{{ '/#call-for-paper' | relative_url }}">Technical Track</a>
+              <a href="#" aria-disabled="true">Workshops</a>
+              <a href="#" aria-disabled="true">Challenges</a>
+              <a href="#" aria-disabled="true">Demos</a>
             </div>
           </div>
-          <a href="#" aria-disabled="true">Challenge</a>
-          <a href="#" aria-disabled="true">Workshop</a>
+          <div class="nav-group">
+            <a href="{{ '/organisation/' | relative_url }}">Organization</a>
+            <div class="nav-menu">
+              <a href="{{ '/organisation/' | relative_url }}">Organising Committee</a>
+              <a href="#" aria-disabled="true">Program Committee</a>
+              <a href="#" aria-disabled="true">Steering Committee</a>
+            </div>
+          </div>
+          <div class="nav-group">
+            <a href="#" aria-disabled="true">Calls</a>
+            <div class="nav-menu">
+              <a href="{{ '/#call-for-paper' | relative_url }}">Call for Papers</a>
+              <a href="#" aria-disabled="true">Call for Challenge</a>
+              <a href="#" aria-disabled="true">Call for Workshop</a>
+              <a href="#" aria-disabled="true">Call for Tutorial</a>
+              <a href="#" aria-disabled="true">Submission Instructions</a>
+            </div>
+          </div>
+          <a href="{{ '/#dates' | relative_url }}">Important Dates</a>
           <a href="#" aria-disabled="true">Sponsorships</a>
           <div class="nav-group">
             <a href="#" aria-disabled="true">Services</a>
             <div class="nav-menu">
               <a href="#" aria-disabled="true">Presentation Instructions</a>
               <a href="#" aria-disabled="true">Registration</a>
-              <a href="#" aria-disabled="true">Visa Request</a>
+              <a href="{{ '/visa-info/' | relative_url }}">Visa Info</a>
               <a href="{{ '/#venue' | relative_url }}">Venue and Travel</a>
               <a href="#" aria-disabled="true">History of AVSS</a>
             </div>
@@ -84,6 +102,14 @@
         Hero photo: <a href="https://commons.wikimedia.org/wiki/File:Macau_-_Skyline.jpg" target="_blank" rel="noopener">Macau - Skyline</a>
         by kewl, licensed under <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a>.
       </p>
+      <div class="footer-host">
+        <img src="{{ '/assets/images/university-of-macau-logo.svg' | relative_url }}" alt="University of Macau">
+        <div>
+          <span>Host Institution</span>
+          <strong>University of Macau</strong>
+          <strong>澳門大學</strong>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
