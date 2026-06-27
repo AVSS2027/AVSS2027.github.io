@@ -657,8 +657,8 @@ a {
   height: 160px;
   margin: 0 auto 14px;
   object-fit: cover;
-  border-radius: 50%;
-  border: 0;
+  border-radius: 8px;
+  border: 1px solid rgba(31, 41, 55, 0.12);
   background: #ffffff;
 }
 
