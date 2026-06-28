@@ -5,7 +5,7 @@ description: AVSS 2027 organising committee
 permalink: /organisation/
 ---
 
-<section class="page-hero compact-hero" style="--hero-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5e/Macau_-_Skyline.jpg');">
+<section class="page-hero compact-hero" style="--hero-image: url('{{ '/assets/images/macau-skyline.jpg' | relative_url }}');">
   <div class="hero-inner">
     <p class="eyebrow">AVSS 2027</p>
     <h1>Organisation</h1>

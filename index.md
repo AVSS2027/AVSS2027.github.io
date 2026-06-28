@@ -4,7 +4,7 @@ title: Home
 description: AVSS 2027 conference website
 ---
 
-<section class="home-hero" style="--hero-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5e/Macau_-_Skyline.jpg');">
+<section class="home-hero" style="--hero-image: url('{{ '/assets/images/macau-skyline.jpg' | relative_url }}');">
   <div class="hero-caption">
     <h1>Welcome to AVSS 2027 in Macau</h1>
     <p>July 15-17, 2027 | University of Macau</p>
