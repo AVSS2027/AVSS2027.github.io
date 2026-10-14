@@ -39,16 +39,53 @@ location, chairs, speakers, and deadlines when confirmed.
 
 ## Local Preview
 
-Jekyll is available from the conda `base` environment on this machine:
+Install the dependencies and preview the site from the repository directory:
 
 ```bash
-conda run -n base jekyll build
-conda run -n base jekyll serve --host 127.0.0.1 --port 4000
+bundle install
+bundle exec jekyll build
+bundle exec jekyll serve --host 127.0.0.1 --port 4000
 ```
 
-If `conda run` keeps the server attached in an awkward way, the linked base
-command can also be called directly:
+On this Windows machine, Ruby and Jekyll are installed in WSL Ubuntu 22.04.
+Run these commands in PowerShell from the repository directory:
+
+```powershell
+wsl -d Ubuntu-22.04 -- bash -lc 'bundle exec jekyll build'
+wsl -d Ubuntu-22.04 -- bash -lc 'bundle exec jekyll serve --host 127.0.0.1 --port 4000 --force_polling'
+```
+
+Open `http://127.0.0.1:4000/`. Press `Ctrl+C` in the serving terminal to stop it.
+The `--force_polling` option watches files stored on the Windows filesystem.
+
+## Search Metadata
+
+- `_includes/seo.html` renders page titles, descriptions, canonical URLs, social
+  sharing metadata, and JSON-LD for the website, pages, conference, and breadcrumbs.
+- Set `seo_title`, `description`, and `sitemap: true` in the front matter of each
+  public page. `sitemap.xml` automatically lists pages that opt in.
+- Keep `_config.yml`'s `url` set to the public HTTPS domain. Jekyll's development
+  server uses localhost URLs; production builds use the configured public domain.
+- `_config.yml`'s `conference` values supply the event metadata and countdown
+  date. Keep the homepage date text and SVG logo in sync when changing dates.
+- Campus address source: <https://www.um.edu.mo/contact/>.
+- `_includes/hero-image.html` supplies the visible, high-priority hero image;
+  keep its dimensions and alt text aligned with the actual photo.
+- Unannounced navigation entries link to individual TBD pages in `pending/`.
+  These pages use `_layouts/pending.html`, are excluded from indexing and the
+  sitemap, and do not preload the hero image. To publish confirmed content,
+  replace the page body and set `layout: default`, `noindex: false`,
+  `sitemap: true`, and `has_hero: false` in its front matter. Keep its permalink
+  so existing menu links remain valid.
+- Subpages show breadcrumbs matching their structured data. `404.html` is
+  excluded from indexing and the sitemap and does not preload the hero image.
+
+Build production output before checking canonical URLs and the sitemap:
 
 ```bash
-/opt/miniconda3/bin/jekyll serve --host 127.0.0.1 --port 4000
+JEKYLL_ENV=production bundle exec jekyll build
 ```
+
+After publishing, submit `https://avss2027.org/sitemap.xml` in Google Search
+Console and inspect the live pages. Structured data does not guarantee a rich
+result: <https://developers.google.com/search/docs/appearance/structured-data/event>.

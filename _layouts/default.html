@@ -1,21 +1,19 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{ site.lang | default: 'en' | escape }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-    <meta name="description" content="{{ page.description | default: site.description }}">
-    <meta property="og:site_name" content="{{ site.title }}">
-    <meta property="og:title" content="{{ page.title | default: site.title }}">
-    <meta property="og:description" content="{{ page.description | default: site.description }}">
-    <meta property="og:image" content="{{ '/assets/images/macau-skyline.webp' | absolute_url }}">
+    {% include seo.html %}
+    <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
+    {% unless page.has_hero == false %}<link rel="preload" as="image" href="{{ '/assets/images/macau-skyline.webp' | relative_url }}" fetchpriority="high">{% endunless %}
     <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
       <div class="logo-masthead">
         <a href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
-          <img src="{{ '/assets/images/avss2027-main-logo.svg' | relative_url }}" alt="AVSS 2027">
+          <img src="{{ '/assets/images/avss2027-main-logo.svg' | relative_url }}" width="1300" height="185" alt="AVSS 2027, July 19-21, University of Macau">
         </a>
       </div>
       <nav class="nav-shell" aria-label="Primary navigation">
@@ -34,59 +32,67 @@
           <div class="nav-group">
             <a href="{{ '/#program' | relative_url }}">Program</a>
             <div class="nav-menu">
-              <a href="#" aria-disabled="true">Keynote Speakers</a>
+              <a href="{{ '/keynote-speakers/' | relative_url }}">Keynote Speakers</a>
               <a href="{{ '/#program' | relative_url }}">Technical Program</a>
-              <a href="#" aria-disabled="true">Tutorials</a>
-              <a href="#" aria-disabled="true">Camera Ready Instruction</a>
+              <a href="{{ '/tutorials/' | relative_url }}">Tutorials</a>
+              <a href="{{ '/camera-ready/' | relative_url }}">Camera Ready Instruction</a>
             </div>
           </div>
           <div class="nav-group">
             <a href="{{ '/#tracks' | relative_url }}">Tracks</a>
             <div class="nav-menu">
               <a href="{{ '/#call-for-paper' | relative_url }}">Technical Track</a>
-              <a href="#" aria-disabled="true">Workshops</a>
-              <a href="#" aria-disabled="true">Challenges</a>
-              <a href="#" aria-disabled="true">Demos</a>
+              <a href="{{ '/workshops/' | relative_url }}">Workshops</a>
+              <a href="{{ '/challenges/' | relative_url }}">Challenges</a>
+              <a href="{{ '/demos/' | relative_url }}">Demos</a>
             </div>
           </div>
           <a href="{{ '/organisation/' | relative_url }}">Organization</a>
           <div class="nav-group">
-            <a href="#" aria-disabled="true">Calls</a>
+            <a href="{{ '/#call-for-paper' | relative_url }}">Calls</a>
             <div class="nav-menu">
               <a href="{{ '/#call-for-paper' | relative_url }}">Call for Papers</a>
-              <a href="#" aria-disabled="true">Call for Challenge</a>
-              <a href="#" aria-disabled="true">Call for Workshop</a>
-              <a href="#" aria-disabled="true">Call for Tutorial</a>
-              <a href="#" aria-disabled="true">Submission Instructions</a>
+              <a href="{{ '/call-for-challenges/' | relative_url }}">Call for Challenge</a>
+              <a href="{{ '/call-for-workshops/' | relative_url }}">Call for Workshop</a>
+              <a href="{{ '/call-for-tutorials/' | relative_url }}">Call for Tutorial</a>
+              <a href="{{ '/submission-instructions/' | relative_url }}">Submission Instructions</a>
             </div>
           </div>
           <a href="{{ '/#dates' | relative_url }}">Important Dates</a>
-          <a href="#" aria-disabled="true">Sponsorships</a>
+          <a href="{{ '/sponsorships/' | relative_url }}">Sponsorships</a>
           <div class="nav-group">
-            <a href="#" aria-disabled="true">Services</a>
+            <a href="{{ '/#attending' | relative_url }}">Services</a>
             <div class="nav-menu">
-              <a href="#" aria-disabled="true">Presentation Instructions</a>
-              <a href="#" aria-disabled="true">Registration</a>
+              <a href="{{ '/presentation-instructions/' | relative_url }}">Presentation Instructions</a>
+              <a href="{{ '/#registration' | relative_url }}">Registration</a>
               <a href="{{ '/visa-info/' | relative_url }}">Visa Info</a>
               <a href="{{ '/#venue' | relative_url }}">Venue and Travel</a>
-              <a href="#" aria-disabled="true">History of AVSS</a>
+              <a href="{{ '/history/' | relative_url }}">History of AVSS</a>
             </div>
           </div>
         </div>
       </nav>
     </header>
 
-    <main>
+    <main id="main-content" tabindex="-1">
+      {% unless page.is_home or page.noindex %}
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="{{ '/' | relative_url }}">{{ site.title }}</a></li>
+          <li aria-current="page">{{ page.title | escape }}</li>
+        </ol>
+      </nav>
+      {% endunless %}
       {{ content }}
     </main>
 
     <footer class="site-footer">
       <div class="footer-branding">
         <div class="footer-logos" aria-label="IEEE, IEEE Signal Processing Society, and University of Macau">
-          <img class="footer-logo-ieee" src="{{ '/logo2.webp' | relative_url }}" alt="IEEE">
-          <img class="footer-logo-sps" src="{{ '/logo1.webp' | relative_url }}" alt="IEEE Signal Processing Society">
+          <img class="footer-logo-ieee" src="{{ '/logo2.webp' | relative_url }}" width="287" height="84" loading="lazy" decoding="async" alt="IEEE">
+          <img class="footer-logo-sps" src="{{ '/logo1.webp' | relative_url }}" width="1280" height="800" loading="lazy" decoding="async" alt="IEEE Signal Processing Society">
           <div class="footer-host">
-            <img src="{{ '/assets/images/university-of-macau-logo.svg' | relative_url }}" alt="University of Macau">
+            <img src="{{ '/assets/images/university-of-macau-logo.svg' | relative_url }}" loading="lazy" decoding="async" alt="University of Macau">
             <div>
               <span>Host Institution</span>
               <strong>University of Macau</strong>

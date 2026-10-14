@@ -1,22 +1,27 @@
 ---
 layout: default
 title: Home
-description: AVSS 2027 conference website
+seo_title: AVSS 2027 | IEEE Conference in Macau, July 19-21
+description: AVSS 2027 is planned for July 19-21 at the University of Macau. Find conference topics, paper deadlines, the organising committee, and travel information.
+permalink: /
+is_home: true
+sitemap: true
 ---
 
-<section class="home-hero" style="--hero-image: url('{{ '/assets/images/macau-skyline.webp' | relative_url }}');">
+<section class="home-hero">
+  {% include hero-image.html %}
   <div class="hero-caption">
     <h1>Welcome to AVSS 2027 in Macau</h1>
-    <p>July 15-17, 2027 | University of Macau</p>
+    <p>July 19-21, 2027 | University of Macau</p>
   </div>
 </section>
 
 <section class="home-grid">
   <div class="home-main">
     <section class="content-block intro-block">
-      <h1>IEEE International Conference on Advanced Visual and Signal-Based Systems (AVSS 2027)</h1>
+      <h2 class="intro-title">IEEE International Conference on Advanced Visual and Signal-Based Systems (AVSS 2027)</h2>
       <p class="lead">
-        AVSS 2027 is planned for July 15-17, 2027 at the University of Macau,
+        AVSS 2027 is planned for July 19-21, 2027 at the University of Macau,
         Macau SAR. The conference provides an interdisciplinary forum for
         researchers, practitioners, and leaders from academia, industry, and
         government to exchange advances in visual and signal-based systems.
@@ -28,23 +33,28 @@ description: AVSS 2027 conference website
         place in Macau SAR, a compact international meeting destination in the
         Guangdong-Hong Kong-Macao Greater Bay Area.
       </p>
+      <p>
+        Meet the <a href="{{ '/organisation/' | relative_url }}">AVSS 2027 organising committee</a>
+        and review the <a href="{{ '/visa-info/' | relative_url }}">Macau visa and entry information</a>
+        when planning your visit.
+      </p>
     </section>
 
     <section id="news" class="content-block">
       <h2>News</h2>
       <div class="notice">AVSS 2027 website is online.</div>
-      <div class="notice">AVSS 2027 is planned for July 15-17, 2027 at the University of Macau, Macau SAR.</div>
+      <div class="notice">AVSS 2027 is planned for July 19-21, 2027 at the University of Macau, Macau SAR.</div>
     </section>
 
     <section id="dates" class="content-block">
       <h2>Important Dates</h2>
       <ul class="date-list">
-        <li><time>Mar 5, 2027</time><span>Abstract submission due</span></li>
-        <li><time>Mar 12, 2027</time><span>Paper submission due</span></li>
-        <li><time>May 7, 2027</time><span>Paper review available</span></li>
-        <li><time>May 21, 2027</time><span>Notification of acceptance</span></li>
-        <li><time>May 28, 2027</time><span>Camera-ready deadline</span></li>
-        <li><time>Jul 15-17, 2027</time><span>IEEE AVSS 2027 conference dates</span></li>
+        <li><time datetime="2027-03-05">Mar 5, 2027</time><span>Abstract submission due</span></li>
+        <li><time datetime="2027-03-12">Mar 12, 2027</time><span>Paper submission due</span></li>
+        <li><time datetime="2027-05-07">May 7, 2027</time><span>Paper review available</span></li>
+        <li><time datetime="2027-05-21">May 21, 2027</time><span>Notification of acceptance</span></li>
+        <li><time datetime="2027-05-28">May 28, 2027</time><span>Camera-ready deadline</span></li>
+        <li><time datetime="2027-07-19">Jul 19-21, 2027</time><span>IEEE AVSS 2027 conference dates</span></li>
       </ul>
       <p class="section-note">Dates are based on the AVSS 2027 Macau proposal and will be updated after final confirmation.</p>
     </section>
@@ -75,6 +85,7 @@ description: AVSS 2027 conference website
             students, and includes modern academic, residential, and meeting
             facilities.
           </p>
+          <p>Campus address: {{ site.conference.street_address }}, {{ site.conference.locality }}, Macau, China. <a href="https://www.um.edu.mo/contact/" target="_blank" rel="noopener">University contact and address</a>.</p>
         </article>
         <article id="registration">
           <h3>Registration</h3>
@@ -112,6 +123,17 @@ description: AVSS 2027 conference website
   </div>
 
   <aside class="home-sidebar" aria-label="Conference quick links">
+    <section class="side-card countdown-card" aria-labelledby="countdown-heading" data-conference-countdown>
+      <h2 id="countdown-heading">Conference Countdown</h2>
+      <div class="countdown-body">
+        <div aria-live="polite" aria-atomic="true">
+          <span class="countdown-number" data-countdown-days>—</span>
+          <span class="countdown-label" data-countdown-label>days to go</span>
+        </div>
+        <time class="countdown-date" datetime="{{ site.conference.start_date }}">{{ site.conference.start_date | date: '%B %-d, %Y' }} · Macau</time>
+      </div>
+    </section>
+
     <section id="tracks" class="side-card side-card-blue">
       <h2>AVSS 2027 Tracks</h2>
       <ul class="track-list">
@@ -150,6 +172,8 @@ description: AVSS 2027 conference website
     </section>
   </aside>
 </section>
+
+<script src="{{ '/assets/js/countdown.js' | relative_url }}" defer></script>
 
 <section id="about" class="content-block about-strip">
   <h2>About IEEE AVSS</h2>

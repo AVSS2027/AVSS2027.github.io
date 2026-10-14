@@ -1,12 +1,40 @@
 title: AVSS 2027
-description: IEEE International Conference on Advanced Visual and Signal-Based Systems
+description: AVSS 2027, the IEEE International Conference on Advanced Visual and Signal-Based Systems, is planned for July 19-21 at the University of Macau.
 url: "https://avss2027.org"
 baseurl: ""
+lang: en
+social_image: /assets/images/macau-skyline.webp
+social_image_alt: Macau skyline reflected on the waterfront at night
+conference:
+  name: IEEE International Conference on Advanced Visual and Signal-Based Systems (AVSS 2027)
+  start_date: "2027-07-19"
+  end_date: "2027-07-21"
+  description: AVSS 2027 is a planned interdisciplinary conference for researchers and practitioners working on visual analytics, signal-based perception, multimodal sensing, and intelligent systems.
+  venue: University of Macau
+  # Campus postal address: https://www.um.edu.mo/contact/
+  street_address: Avenida da Universidade
+  locality: Taipa
+  region: Macau SAR
+  country: MO
 markdown: kramdown
 plugins: []
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vercel.json
+  - vendor
+  - node_modules
 
 defaults:
   - scope:
       path: ""
     values:
       layout: default
+  - scope:
+      path: "pending"
+    values:
+      layout: pending
+      noindex: true
+      sitemap: false
+      has_hero: false

@@ -1,11 +1,14 @@
 ---
 layout: default
 title: Visa Info
-description: Visa and entry information for AVSS 2027 participants
+seo_title: Macau Visa and Entry Information | AVSS 2027
+description: Plan your trip to AVSS 2027 in Macau. Find visa and entry guidance, passport and travel document reminders, and links to official Macao government information.
 permalink: /visa-info/
+sitemap: true
 ---
 
-<section class="page-hero compact-hero" style="--hero-image: url('{{ '/assets/images/macau-skyline.webp' | relative_url }}');">
+<section class="page-hero compact-hero">
+  {% include hero-image.html %}
   <div class="hero-inner">
     <p class="eyebrow">AVSS 2027</p>
     <h1>Visa Info</h1>
@@ -21,6 +24,11 @@ permalink: /visa-info/
     Macau SAR. The information below is provided as a general planning guide and
     should be verified against the official Macao SAR Government information
     before departure.
+  </p>
+  <p>
+    For campus location and travel planning, see the
+    <a href="{{ '/#venue' | relative_url }}">University of Macau conference venue</a>
+    and <a href="{{ '/#transportation' | relative_url }}">transportation information</a>.
   </p>
 
   <div class="notice">
