@@ -1,1 +1,1 @@
-<img class="hero-image" src="{{ '/assets/images/macau-skyline.webp' | relative_url }}" width="2400" height="1602" alt="Macau skyline reflected on the waterfront at night" fetchpriority="high" decoding="async">
+<img class="hero-image" src="{{ site.hero_image.path | relative_url }}" srcset="{% include hero-srcset.html %}" sizes="100vw" width="{{ site.hero_image.width }}" height="{{ site.hero_image.height }}" alt="{{ site.hero_image.alt | escape }}" fetchpriority="high" decoding="async">

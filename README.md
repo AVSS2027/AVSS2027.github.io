@@ -11,7 +11,8 @@ The homepage content is written in Markdown and rendered by GitHub Pages/Jekyll.
 - `index.md` is the homepage content.
 - `_layouts/default.html` is the Jekyll page shell.
 - `assets/css/site.css` controls the visual style.
-- The hero background uses a Wikimedia Commons Macau skyline photo. Attribution is shown in the site footer.
+- The hero uses a University of Macau nighttime aerial photo. Attribution is
+  shown in the site footer, and the venue page credits its campus gallery.
 
 GitHub Pages can render this directly with Jekyll.
 
@@ -69,8 +70,9 @@ The `--force_polling` option watches files stored on the Windows filesystem.
 - `_config.yml`'s `conference` values supply the event metadata and countdown
   date. Keep the homepage date text and SVG logo in sync when changing dates.
 - Campus address source: <https://www.um.edu.mo/contact/>.
-- `_includes/hero-image.html` supplies the visible, high-priority hero image;
-  keep its dimensions and alt text aligned with the actual photo.
+- `_includes/hero-image.html` and `_includes/hero-srcset.html` supply the visible,
+  high-priority hero image. `_config.yml` defines its dimensions, alt text,
+  responsive sources, and social-sharing image.
 - Unannounced navigation entries link to individual TBD pages in `pending/`.
   These pages use `_layouts/pending.html`, are excluded from indexing and the
   sitemap, and do not preload the hero image. To publish confirmed content,
@@ -89,3 +91,23 @@ JEKYLL_ENV=production bundle exec jekyll build
 After publishing, submit `https://avss2027.org/sitemap.xml` in Google Search
 Console and inspect the live pages. Structured data does not guarantee a rich
 result: <https://developers.google.com/search/docs/appearance/structured-data/event>.
+
+## Campus Photographs
+
+The current campus photographs were supplied from the University of Macau's
+"UM High-resolution Panorama" collection:
+<https://www.um.edu.mo/news/campus-photos/>. Web-sized WebP derivatives keep the
+supplied photographs intact; the full-resolution originals remain outside the
+repository.
+
+| Web asset | Supplied photograph |
+| --- | --- |
+| `um-campus-night-{960,1600,2400}.webp` | `5_澳大_航拍_晚上 UM Aerial View_Nighttime_1.jpg` |
+| `um-campus-aerial-day.webp` | `4_澳大_航拍_白天 UM_Aerial View_Daytime_2.jpg` |
+| `um-campus-lake-day.webp` | `1_澳大_湖景_白天 UM_Lake View_Daytime.jpg` |
+| `um-library-day.webp` | `8_澳大_圖書館_白天 UM_Library_Daytime.jpg` |
+| `um-wall-great-wisdom.webp` | `7_澳大_博雅之璧 UM_The Wall of Great Wisdom.jpg` |
+
+`/venue-and-travel/` contains the campus gallery and Macau sightseeing resources.
+`/sponsorships/` is a published content page; its front matter overrides the
+pending-page defaults so it is indexed and included in the sitemap.

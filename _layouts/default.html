@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% include seo.html %}
     <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
-    {% unless page.has_hero == false %}<link rel="preload" as="image" href="{{ '/assets/images/macau-skyline.webp' | relative_url }}" fetchpriority="high">{% endunless %}
+    {% unless page.has_hero == false %}<link rel="preload" as="image" href="{{ site.hero_image.path | relative_url }}" imagesrcset="{% include hero-srcset.html %}" imagesizes="100vw" fetchpriority="high">{% endunless %}
     <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
   </head>
   <body>
@@ -66,7 +66,7 @@
               <a href="{{ '/presentation-instructions/' | relative_url }}">Presentation Instructions</a>
               <a href="{{ '/#registration' | relative_url }}">Registration</a>
               <a href="{{ '/visa-info/' | relative_url }}">Visa Info</a>
-              <a href="{{ '/#venue' | relative_url }}">Venue and Travel</a>
+              <a href="{{ '/venue-and-travel/' | relative_url }}">Venue and Travel</a>
               <a href="{{ '/history/' | relative_url }}">History of AVSS</a>
             </div>
           </div>
@@ -105,10 +105,10 @@
         </p>
         <a href="https://www.ieee.org/about/corporate/governance/p9-26.html" target="_blank" rel="noopener">Code of Conduct</a>
       </div>
-      <p class="photo-credit">
-        Hero photo: <a href="https://commons.wikimedia.org/wiki/File:Macau_-_Skyline.jpg" target="_blank" rel="noopener">Macau - Skyline</a>
-        by kewl, licensed under <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a>.
-      </p>
+      {% unless page.has_hero == false %}<p class="photo-credit">
+        Campus photo: University of Macau.
+        <a href="https://www.um.edu.mo/news/campus-photos/" target="_blank" rel="noopener">UM High-resolution Panorama</a>.
+      </p>{% endunless %}
     </footer>
   </body>
 </html>

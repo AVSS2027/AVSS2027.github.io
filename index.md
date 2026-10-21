@@ -86,6 +86,7 @@ sitemap: true
             facilities.
           </p>
           <p>Campus address: {{ site.conference.street_address }}, {{ site.conference.locality }}, Macau, China. <a href="https://www.um.edu.mo/contact/" target="_blank" rel="noopener">University contact and address</a>.</p>
+          <p><a href="{{ '/venue-and-travel/' | relative_url }}">View the campus photos, venue and travel information, and Macau sightseeing highlights</a>.</p>
         </article>
         <article id="registration">
           <h3>Registration</h3>
@@ -160,7 +161,7 @@ sitemap: true
 
     <section class="side-card side-card-soft">
       <h2>Supporters</h2>
-      <p>Organizer and supporter information will be announced.</p>
+      <p><a href="{{ '/sponsorships/' | relative_url }}">University of Macau</a> supports AVSS 2027. Additional sponsors and partners are welcome.</p>
     </section>
 
     <section class="side-card">

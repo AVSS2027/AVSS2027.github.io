@@ -3,8 +3,22 @@ description: AVSS 2027, the IEEE International Conference on Advanced Visual and
 url: "https://avss2027.org"
 baseurl: ""
 lang: en
-social_image: /assets/images/macau-skyline.webp
-social_image_alt: Macau skyline reflected on the waterfront at night
+social_image: /assets/images/um-campus-night-2400.webp
+social_image_alt: Aerial view of the illuminated University of Macau campus at night
+social_image_width: 2400
+social_image_height: 1332
+hero_image:
+  path: /assets/images/um-campus-night-2400.webp
+  width: 2400
+  height: 1332
+  alt: Aerial view of the illuminated University of Macau campus at night
+  sources:
+    - path: /assets/images/um-campus-night-960.webp
+      width: 960
+    - path: /assets/images/um-campus-night-1600.webp
+      width: 1600
+    - path: /assets/images/um-campus-night-2400.webp
+      width: 2400
 conference:
   name: IEEE International Conference on Advanced Visual and Signal-Based Systems (AVSS 2027)
   start_date: "2027-07-19"
