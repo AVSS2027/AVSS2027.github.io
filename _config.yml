@@ -1,5 +1,5 @@
 title: AVSS 2027
-description: AVSS 2027, the IEEE International Conference on Advanced Visual and Signal-Based Systems, is planned for July 19-21 at the University of Macau.
+description: AVSS 2027, the International Conference on Advanced Visual and Signal-Based Systems, is planned for July 19-21 at the University of Macau.
 url: "https://avss2027.org"
 baseurl: ""
 lang: en
@@ -20,7 +20,7 @@ hero_image:
     - path: /assets/images/um-campus-night-2400.webp
       width: 2400
 conference:
-  name: IEEE International Conference on Advanced Visual and Signal-Based Systems (AVSS 2027)
+  name: International Conference on Advanced Visual and Signal-Based Systems (AVSS 2027)
   start_date: "2027-07-19"
   end_date: "2027-07-21"
   description: AVSS 2027 is a planned interdisciplinary conference for researchers and practitioners working on visual analytics, signal-based perception, multimodal sensing, and intelligent systems.

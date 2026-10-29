@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-seo_title: AVSS 2027 | IEEE Conference in Macau, July 19-21
+seo_title: AVSS 2027 Conference in Macau, July 19-21
 description: AVSS 2027 is planned for July 19-21 at the University of Macau. Find conference topics, paper deadlines, the organising committee, and travel information.
 permalink: /
 is_home: true
@@ -19,7 +19,7 @@ sitemap: true
 <section class="home-grid">
   <div class="home-main">
     <section class="content-block intro-block">
-      <h2 class="intro-title">IEEE International Conference on Advanced Visual and Signal-Based Systems (AVSS 2027)</h2>
+      <h2 class="intro-title">International Conference on Advanced Visual and Signal-Based Systems (AVSS 2027)</h2>
       <p class="lead">
         AVSS 2027 is planned for July 19-21, 2027 at the University of Macau,
         Macau SAR. The conference provides an interdisciplinary forum for
@@ -54,7 +54,7 @@ sitemap: true
         <li><time datetime="2027-05-07">May 7, 2027</time><span>Paper review available</span></li>
         <li><time datetime="2027-05-21">May 21, 2027</time><span>Notification of acceptance</span></li>
         <li><time datetime="2027-05-28">May 28, 2027</time><span>Camera-ready deadline</span></li>
-        <li><time datetime="2027-07-19">Jul 19-21, 2027</time><span>IEEE AVSS 2027 conference dates</span></li>
+        <li><time datetime="2027-07-19">Jul 19-21, 2027</time><span>AVSS 2027 conference dates</span></li>
       </ul>
       <p class="section-note">Dates are based on the AVSS 2027 Macau proposal and will be updated after final confirmation.</p>
     </section>
@@ -91,9 +91,8 @@ sitemap: true
         <article id="registration">
           <h3>Registration</h3>
           <p>
-            Tentative registration categories include SPS member, IEEE member,
-            non-member, and student rates. Final registration instructions will
-            be announced after confirmation.
+            Registration categories and rates are still being developed. Final
+            registration instructions will be announced after confirmation.
           </p>
         </article>
         <article id="transportation">
@@ -177,9 +176,9 @@ sitemap: true
 <script src="{{ '/assets/js/countdown.js' | relative_url }}" defer></script>
 
 <section id="about" class="content-block about-strip">
-  <h2>About IEEE AVSS</h2>
+  <h2>About AVSS</h2>
   <p>
-    IEEE AVSS is a long-running conference series focused on advanced visual and
+    AVSS is a long-running conference series focused on advanced visual and
     signal-based systems, bringing together work on sensing, perception,
     analytics, systems, deployment, and applications.
   </p>
