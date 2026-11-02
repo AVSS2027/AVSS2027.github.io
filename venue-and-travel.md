@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Venue and Travel
-seo_title: Venue, Travel and Macau Sightseeing | AVSS 2027
-description: Explore the University of Macau conference campus, plan your journey to AVSS 2027, and discover Macau's heritage sites with official sightseeing resources.
+seo_title: Venue, Travel and Macau Sightseeing | 23rd IEEE AVSS 2027
+description: Explore the University of Macau conference campus, plan your journey to the 23rd IEEE AVSS in 2027, and discover Macau's heritage sites with official sightseeing resources.
 permalink: /venue-and-travel/
 sitemap: true
 has_hero: false
@@ -10,7 +10,7 @@ has_hero: false
 
 <section class="section travel-page">
   <header class="travel-heading">
-    <p class="section-kicker">AVSS 2027 · Macau</p>
+    <p class="section-kicker">{{ site.title | escape }} · Macau</p>
     <h1>Venue and Travel</h1>
     <p class="lead">Discover our host campus and make the most of your visit to Macau.</p>
     <nav class="travel-jump-links" aria-label="Venue and travel sections">

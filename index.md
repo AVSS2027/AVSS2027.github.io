@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Home
-seo_title: AVSS 2027 Conference in Macau, July 19-21
-description: AVSS 2027 is planned for July 19-21 at the University of Macau. Find conference topics, paper deadlines, the organising committee, and travel information.
+seo_title: 23rd IEEE AVSS 2027 Conference in Macau, July 19-21
+description: The 23rd IEEE AVSS is planned for July 19-21, 2027 at the University of Macau. Find conference topics, paper deadlines, the organising committee, and travel information.
 permalink: /
 is_home: true
 sitemap: true
@@ -11,7 +11,7 @@ sitemap: true
 <section class="home-hero">
   {% include hero-image.html %}
   <div class="hero-caption">
-    <h1>Welcome to AVSS 2027 in Macau</h1>
+    <h1>Welcome to the 23rd IEEE AVSS in Macau</h1>
     <p>July 19-21, 2027 | University of Macau</p>
   </div>
 </section>
@@ -19,9 +19,9 @@ sitemap: true
 <section class="home-grid">
   <div class="home-main">
     <section class="content-block intro-block">
-      <h2 class="intro-title">International Conference on Advanced Visual and Signal-Based Systems (AVSS 2027)</h2>
+      <h2 class="intro-title">{{ site.conference.name | escape }}</h2>
       <p class="lead">
-        AVSS 2027 is planned for July 19-21, 2027 at the University of Macau,
+        The 23rd IEEE AVSS is planned for July 19-21, 2027 at the University of Macau,
         Macau SAR. The conference provides an interdisciplinary forum for
         researchers, practitioners, and leaders from academia, industry, and
         government to exchange advances in visual and signal-based systems.

@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Visa Info
-seo_title: Macau Visa and Entry Information | AVSS 2027
-description: Plan your trip to AVSS 2027 in Macau. Find visa and entry guidance, passport and travel document reminders, and links to official Macao government information.
+seo_title: Macau Visa and Entry Information | 23rd IEEE AVSS 2027
+description: Plan your trip to the 23rd IEEE AVSS in Macau in 2027. Find visa and entry guidance, passport and travel document reminders, and links to official Macao government information.
 permalink: /visa-info/
 sitemap: true
 ---
@@ -10,7 +10,7 @@ sitemap: true
 <section class="page-hero compact-hero">
   {% include hero-image.html %}
   <div class="hero-inner">
-    <p class="eyebrow">AVSS 2027</p>
+    <p class="eyebrow">{{ site.title | escape }}</p>
     <h1>Visa Info</h1>
   </div>
 </section>

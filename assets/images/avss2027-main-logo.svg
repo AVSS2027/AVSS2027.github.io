@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 55 1300 185" role="img" aria-labelledby="title desc">
-  <title id="title">AVSS 2027 Macau SAR logo</title>
-  <desc id="desc">A balanced AVSS 2027 conference logo with stylized Macau landmarks and conference details.</desc>
+  <title id="title">23rd IEEE AVSS 2027 Macau SAR logo</title>
+  <desc id="desc">Logo for the 23rd International Conference on Advanced Visual and Signal-Based Systems (IEEE AVSS), with stylized Macau landmarks and conference details for July 19-21, 2027.</desc>
   <defs>
     <linearGradient id="water" x1="0" x2="1" y1="0" y2="0">
       <stop offset="0" stop-color="#0879bd"/>
@@ -14,7 +14,7 @@
       .white { fill: #fff; }
       .stroke { fill: none; stroke: #0878bd; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
       .stroke-thin { fill: none; stroke: #0878bd; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
-      .title { font-family: Arial, Helvetica, sans-serif; font-size: 82px; font-weight: 800; letter-spacing: 0; fill: #0878bd; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 64px; font-weight: 800; letter-spacing: 0; fill: #0878bd; }
       .date { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 800; letter-spacing: 0; fill: #075f9c; }
       .place { font-family: Arial, Helvetica, sans-serif; font-size: 27px; font-weight: 800; letter-spacing: 0; fill: #075f9c; }
       .mark { font-family: Arial, Helvetica, sans-serif; font-size: 32px; font-weight: 800; letter-spacing: 0; fill: #fff; }
@@ -57,7 +57,7 @@
   </g>
 
   <g transform="translate(740 131)">
-    <text x="0" y="0" class="title">AVSS 2027</text>
+    <text x="0" y="0" class="title">23rd IEEE AVSS</text>
     <text x="4" y="48" class="date">July 19-21, 2027</text>
     <text x="4" y="88" class="place">University of Macau | Macau SAR</text>
   </g>

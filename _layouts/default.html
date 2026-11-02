@@ -13,7 +13,7 @@
     <header class="site-header">
       <div class="logo-masthead">
         <a href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
-          <img src="{{ '/assets/images/avss2027-main-logo.svg' | relative_url }}" width="1300" height="185" alt="AVSS 2027, July 19-21, University of Macau">
+          <img src="{{ '/assets/images/avss2027-main-logo.svg' | relative_url }}" width="1300" height="185" alt="{{ site.title | escape }}, July 19-21, University of Macau">
         </a>
       </div>
       <nav class="nav-shell" aria-label="Primary navigation">
@@ -97,7 +97,7 @@
           </div>
         </div>
         <p class="footer-copyright">
-          2027. International Conference on Advanced Visual and Signal-Based Systems (AVSS), All Rights Reserved.
+          2027. {{ site.conference.name | escape }}, All Rights Reserved.
         </p>
       </div>
       {% unless page.has_hero == false %}<p class="photo-credit">

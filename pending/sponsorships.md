@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Sponsorships
-seo_title: Sponsors and Sponsorship Opportunities | AVSS 2027
-description: AVSS 2027 acknowledges the support of the University of Macau and welcomes additional sponsors and partners from industry, academia, and other organisations.
+seo_title: Sponsors and Sponsorship Opportunities | 23rd IEEE AVSS 2027
+description: The 23rd IEEE AVSS in 2027 acknowledges the support of the University of Macau and welcomes additional sponsors and partners from industry, academia, and other organisations.
 permalink: /sponsorships/
 noindex: false
 sitemap: true
@@ -10,7 +10,7 @@ has_hero: false
 ---
 
 <section class="section sponsorship-page">
-  <p class="section-kicker">Supporting AVSS 2027</p>
+  <p class="section-kicker">Supporting {{ site.title | escape }}</p>
   <h1>Sponsorships</h1>
   <p class="lead">We gratefully acknowledge the support of the University of Macau for AVSS 2027.</p>
 

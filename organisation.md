@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Organisation
-seo_title: Organising Committee | AVSS 2027 Macau
-description: Meet the AVSS 2027 organising committee, including the honorary chair, general chairs, program chairs, and conference teams for the Macau edition.
+seo_title: Organising Committee | 23rd IEEE AVSS 2027 Macau
+description: Meet the 23rd IEEE AVSS 2027 organising committee, including the honorary chair, general chairs, program chairs, and conference teams for the Macau edition.
 permalink: /organisation/
 sitemap: true
 ---
@@ -10,7 +10,7 @@ sitemap: true
 <section class="page-hero compact-hero">
   {% include hero-image.html %}
   <div class="hero-inner">
-    <p class="eyebrow">AVSS 2027</p>
+    <p class="eyebrow">{{ site.title | escape }}</p>
     <h1>Organisation</h1>
   </div>
 </section>
