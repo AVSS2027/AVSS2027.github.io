@@ -129,12 +129,17 @@ sitemap: true
     </article>
   </div>
 
-  <h3>Tutorial Chair</h3>
-  <div class="committee-grid one-card">
+  <h3>Tutorial Chairs</h3>
+  <div class="committee-grid">
     <article class="person-card">
       <img src="{{ '/commitee_photo/qian-liu.webp' | relative_url }}" alt="Qian Liu" width="180" height="180" loading="lazy" decoding="async">
       <h4>Qian Liu</h4>
       <p>University of Auckland</p>
+    </article>
+    <article class="person-card">
+      <img src="{{ '/commitee_photo/david-han.webp' | relative_url }}" alt="David Han" width="240" height="300" loading="lazy" decoding="async">
+      <h4>David Han</h4>
+      <p>Drexel University</p>
     </article>
   </div>
 
