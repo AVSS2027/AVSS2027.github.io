@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 55 1300 185" role="img" aria-labelledby="title desc">
-  <title id="title">23rd IEEE AVSS 2027 Macau SAR logo</title>
-  <desc id="desc">Logo for the 23rd International Conference on Advanced Visual and Signal-Based Systems (IEEE AVSS), with stylized Macau landmarks and conference details for July 19-21, 2027.</desc>
+  <title id="title">23rd AVSS 2027 Macau SAR logo</title>
+  <desc id="desc">Logo for the 23rd International Conference on Advanced Visual and Signal-Based Systems (AVSS), with stylized Macau landmarks and conference details for July 19-21, 2027.</desc>
   <defs>
     <linearGradient id="water" x1="0" x2="1" y1="0" y2="0">
       <stop offset="0" stop-color="#0879bd"/>
@@ -57,7 +57,7 @@
   </g>
 
   <g transform="translate(740 131)">
-    <text x="0" y="0" class="title">23rd IEEE AVSS</text>
+    <text x="0" y="0" class="title">23rd AVSS</text>
     <text x="4" y="48" class="date">July 19-21, 2027</text>
     <text x="4" y="88" class="place">University of Macau | Macau SAR</text>
   </g>

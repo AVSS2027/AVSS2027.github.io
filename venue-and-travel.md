@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Venue and Travel
-seo_title: Venue, Travel and Macau Sightseeing | 23rd IEEE AVSS 2027
-description: Explore the University of Macau conference campus, plan your journey to the 23rd IEEE AVSS in 2027, and discover Macau's heritage sites with official sightseeing resources.
+seo_title: Venue, Travel and Macau Sightseeing | 23rd AVSS 2027
+description: Explore the University of Macau conference campus, plan your journey to the 23rd AVSS in 2027, and discover Macau's heritage sites with official sightseeing resources.
 permalink: /venue-and-travel/
 sitemap: true
 has_hero: false

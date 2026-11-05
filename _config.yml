@@ -1,5 +1,5 @@
-title: 23rd IEEE AVSS 2027
-description: The 23rd International Conference on Advanced Visual and Signal-Based Systems (IEEE AVSS) is planned for July 19-21, 2027 at the University of Macau.
+title: 23rd AVSS 2027
+description: The 23rd International Conference on Advanced Visual and Signal-Based Systems (AVSS) is planned for July 19-21, 2027 at the University of Macau.
 url: "https://avss2027.org"
 baseurl: ""
 lang: en
@@ -20,10 +20,10 @@ hero_image:
     - path: /assets/images/um-campus-night-2400.webp
       width: 2400
 conference:
-  name: 23rd International Conference on Advanced Visual and Signal-Based Systems (IEEE AVSS)
+  name: 23rd International Conference on Advanced Visual and Signal-Based Systems (AVSS)
   start_date: "2027-07-19"
   end_date: "2027-07-21"
-  description: The 23rd IEEE AVSS, planned for 2027, is an interdisciplinary conference for researchers and practitioners working on visual analytics, signal-based perception, multimodal sensing, and intelligent systems.
+  description: The 23rd AVSS, planned for 2027, is an interdisciplinary conference for researchers and practitioners working on visual analytics, signal-based perception, multimodal sensing, and intelligent systems.
   venue: University of Macau
   # Campus postal address: https://www.um.edu.mo/contact/
   street_address: Avenida da Universidade
